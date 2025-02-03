@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../pages/navbar.css";
+import "../pages/Navbar.css";
 import Navlink from "./Navlink";
 import { navData } from "../utils/data";
 import { handleEnquiryFormClick } from "../utils/whatsapp";
