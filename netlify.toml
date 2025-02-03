@@ -1,0 +1,2 @@
+ [functions."fetchGoldRate"]
+  schedule = "0 8,20 * * *" # Runs at 8 AM and 8 PM UTC daily

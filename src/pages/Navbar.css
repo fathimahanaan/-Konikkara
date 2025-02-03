@@ -1,0 +1,158 @@
+/* navbar.css */
+
+/* General Navbar Styles */
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #ecd8c4, #f5eee3);
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+} */
+
+.logo img {
+  width: 150px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  color: rgba(81, 54, 12, 0.863);
+  font-weight: bold;
+}
+
+.nav-link {
+  color: rgba(81, 54, 12, 0.863);
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-right: 25px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link:hover {
+  color: #dccd6c; /* Warm yellow-orange color for hover */
+  transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
+.ham {
+  display: none;
+  cursor: pointer;
+  font-size: 32px;
+  margin: 0;
+}
+
+.bar {
+  height: 4px;
+  background-color: rgba(81, 54, 12, 0.863);
+  width: 100%;
+}
+
+.contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0;
+  border: 1px solid #7d6257;
+  border-radius: 8px;
+  cursor: pointer;
+  color: rgba(81, 54, 12, 0.863);
+}
+
+.ctn-btn {
+  visibility: hidden;
+}
+
+.contact-btn {
+  background-color: #f5eee3;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  /* Purple text color */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #674910; /* Warm yellow-orange on hover */
+  color: #fff; /* White text on hover */
+  transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    width: 100%;
+
+    background: #fefdfcf3;
+
+    /* Gradient background */
+    position: absolute;
+    top: 60px; /* Make sure the links appear below the navbar */
+    left: 0;
+    padding: 15px;
+    z-index: 1000;
+    gap: 20px;
+  }
+
+  .menu.open .nav-links {
+    display: flex; /* Display nav links when menu is open */
+  }
+
+  .nav-link {
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+    color: rgba(81, 54, 12, 0.863);
+  }
+
+  .ham {
+    display: flex;
+    order: 3; /* Hamburger menu on the right */
+    color: rgba(81, 54, 12, 0.863);
+  }
+
+  .contact-button {
+    display: none;
+    color: rgba(81, 54, 12, 0.863);
+  }
+
+  .ctn-btn {
+    visibility: visible;
+  }
+}

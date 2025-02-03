@@ -1,0 +1,143 @@
+.about-section {
+  padding: 60px 20px;
+  background: linear-gradient(
+    to bottom,
+    #fbf8f4,
+    #f9f2e7
+  ); /* Subtle gradient for the background */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 40px; /* Space between text and image sections */
+}
+
+.text-container,
+.image-container {
+  flex: 1; /* Ensures equal width for text and image */
+  max-width: 50%; /* Limits the width to ensure balance */
+}
+
+.text-container {
+  text-align: left;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.text-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #5b4035; /* Deep brown for better contrast */
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #5b4035; /* Deep brown for better contrast */
+  font-weight: bold;
+}
+
+.text-container p {
+  font-size: 1.1rem;
+  color: #604d46;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify; /* For better readability */
+}
+
+.text-container button {
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #7d6257;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid #7d6257;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: fit-content;
+}
+
+.text-container button:hover {
+  background-color: #8c6d5a;
+  transform: scale(1.05); /* Subtle hover effect */
+  color: white;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  width: 80%; /* Ensures the image takes full width of its container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text-container,
+  .image-container {
+    max-width: 100%; /* Ensures full width for smaller screens */
+    text-align: center;
+    padding: 0;
+  }
+
+  .text-container h2 {
+    font-size: 2rem;
+  }
+
+  .text-container p {
+    font-size: 1rem;
+  }
+
+  .about-image {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 10px 15px;
+  }
+
+  .text-container h3 {
+    font-size: 1.8rem;
+  }
+
+  .text-container p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .text-container button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-container p {
+    font-size: 0.9rem;
+  }
+
+  .about-image {
+    border-radius: 10px;
+  }
+}

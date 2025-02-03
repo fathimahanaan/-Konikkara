@@ -1,0 +1,131 @@
+.Gold-outer-container {
+  min-height: 70vh;
+  padding: 10px;
+  background: linear-gradient(135deg, #f9f3ed, #f5eee3);
+}
+h4 {
+  margin: 0;
+}
+
+.Gold-inner-container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  background: transparent;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 8px;
+  padding-bottom: 40px;
+}
+
+.Gold-card-1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("public/goldbiscuits.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.Gold-card-2 {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(255, 253, 253);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-container {
+  color: #8f7917;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  padding-right: 100px;
+}
+
+.gold-rate-heading {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0;
+  color: rgb(86, 52, 37);
+}
+
+.h4-gold {
+  margin-bottom: 5px;
+  font-size: 25px;
+  color: rgb(43, 41, 27);
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d7cda1; /* Lighter gold-colored line */
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  .Gold-outer-container {
+    height: auto;
+    padding-bottom: 0px;
+  }
+  .Gold-inner-container {
+    flex-direction: column; /* Stack the cards vertically */
+    height: auto; /* Adjust height to fit content */
+    padding-bottom: 20px;
+  }
+
+  .Gold-card-1,
+  .Gold-card-2 {
+    width: 520px;
+    height: 300px;
+    border-radius: 0px;
+  }
+
+  .Gold-card-1 {
+    background-size: cover;
+  }
+
+  .h4-gold {
+    font-size: 22px;
+  }
+
+  .price-container {
+    font-size: 18px;
+  }
+
+  .gold-rate-heading {
+    margin-bottom: 3px;
+  }
+}
+
+/* Mobile Devices (480px and below) */
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  .Gold-outer-container {
+    padding-top: 30px;
+    height: auto; /* Let the content dictate the height */
+  }
+
+  .Gold-inner-container {
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .Gold-card-1,
+  .Gold-card-2 {
+    width: 100%; /* Adjust to full width for better responsiveness */
+    min-height: 250px; /* Minimum height, but can expand if needed */
+    height: auto; /* Remove fixed height */
+    border-radius: 0px;
+  }
+
+  .h4-gold {
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+
+  .price-container {
+    font-size: 16px;
+  }
+}

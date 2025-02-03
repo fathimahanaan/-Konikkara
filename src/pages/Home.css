@@ -1,0 +1,85 @@
+/* Home.css */
+html {
+  scroll-behavior: smooth;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  position: relative;
+  color: white;
+  background-image: url("Jwellery.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content {
+  text-align: center;
+}
+
+.des {
+  flex: 1;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 40px; /* Increased size for a more luxurious feel */
+  font-weight: bold;
+  margin-bottom: 0;
+  color: rgba(81, 54, 12, 0.863); /* Gold color for elegance */
+}
+
+.description {
+  font-size: 15px;
+  padding-bottom: 0;
+  /* color: #4f380a; Light gray for the description */
+  font-weight: bold;
+  color: rgba(81, 54, 12, 0.863);
+  line-height: 1.8;
+}
+
+.cta-button {
+  background-color: #fffefb; /* Gold color for the button */
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: rgba(81, 54, 12, 0.863);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(166, 74, 74, 0.3); /* Adds a subtle shadow for depth */
+  width: fit-content;
+  font-weight: bold;
+  border: rgba(81, 54, 12, 0.863);
+}
+
+.cta-button:hover {
+  background-color: #dfbf8b; /* Darker gold on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+    margin: 0;
+  }
+
+  .heading {
+    font-size: 25px; /* Slightly smaller on mobile */
+    margin: 5px;
+  }
+
+  .description {
+    font-size: 10px;
+    margin: 6px;
+  }
+
+  .cta-button {
+    font-size: 1.1rem;
+    padding: 12px 25px;
+  }
+}
