@@ -1,18 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../pages/GoldRate.css";
 // Import the custom hook
 import LoadingSpinner from "./LoadingSpinner"; // Import your loading spinner component
 
 const GoldRate = () => {
-  const [goldPrice, setGoldPrice] = useState(null);
+  const [priceData, setPriceData] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchGoldRate = async () => {
       try {
         const response = await fetch("/.netlify/functions/fetchGoldRate");
-        const data = await response.json();
-        setGoldPrice(data.goldRate);
+        const data = response.json();
+        setPriceData(data.goldRate);
         console.log(data);
       } catch (err) {
         console.error("Error:", err);
@@ -23,9 +23,7 @@ const GoldRate = () => {
     fetchGoldRate();
   }, []);
 
-  return loading ? (
-    <LoadingSpinner />
-  ) : (
+  return (
     <div className="Gold-outer-container">
       {" "}
       <h4 className="gold-rate-heading">Gold Rate</h4>
