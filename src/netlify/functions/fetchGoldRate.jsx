@@ -6,6 +6,7 @@ exports.handler = async (event, context) => {
       headers: { "x-access-token": "goldapi-1646kcsm6kmgxy8-io" },
     }); // Using Axios to fetch data
     const goldRate = response.data;
+    console.log(goldRate);
 
     return {
       statusCode: 200,

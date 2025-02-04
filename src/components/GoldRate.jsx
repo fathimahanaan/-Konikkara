@@ -10,7 +10,7 @@ const GoldRate = () => {
   useEffect(() => {
     const fetchGoldRate = async () => {
       try {
-        const response = await fetch("/.netlify/functions/fetchGoldRate");
+        const response = await fetch("../netlify/functions/fetchGoldRate");
         const data = response.json();
         setPriceData(data.goldRate);
         console.log(data);
