@@ -21,7 +21,7 @@ const Collection = () => {
             </button>
           </div>
           <div className="collection-image">
-            <img src="naga.webp" className="image" />
+            <img src="naga.jpg" className="image" />
             <img src="necklace-2.webp" className="image" />
             <img src="palakka.jpg" className="image" />
           </div>

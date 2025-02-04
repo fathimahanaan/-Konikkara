@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
 import GoldRate from "./components/GoldRate";
 import LoadingSpinner from "./components/LoadingSpinner";
+import WhatsappButton from "./components/WhatsappButton";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <GoldRate />
       <ContactForm />
       <Footer />
+      <WhatsappButton />
     </div>
   );
 };

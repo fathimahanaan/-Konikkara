@@ -14,22 +14,18 @@ const Footer = () => {
       <div className="hanaan">
         {/* Logo and Social Links */}
         <div className="footer-logo-social">
-          <img src="Footer.png"></img>
-
+          <a href="#Home">
+            <img src="Footer.png"></img>
+          </a>
           <div className="social-links">
-            <a href="#">
+            <a href="https://www.instagram.com/konikkara_gold_diamonds?igsh=MWd5c2JqNHVuenJ3ZQ==">
               <p>
                 <BsInstagram color="white" size={24} />
               </p>
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/share/19TtyRLcnX/?mibextid=wwXIfr">
               <p>
                 <FaFacebookSquare color="white" size={24} />
-              </p>
-            </a>
-            <a href="#">
-              <p>
-                <FaTwitterSquare color="white" size={24} />
               </p>
             </a>
           </div>
