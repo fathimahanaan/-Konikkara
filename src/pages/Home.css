@@ -9,7 +9,7 @@ html {
   min-height: 90vh;
   position: relative;
   color: white;
-  background-image: url("Jwellery.jpg");
+  background-image: url(" ../../public/Jwellery.jpg");
 
   background-size: cover;
   background-position: center;
