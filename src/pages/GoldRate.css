@@ -23,7 +23,7 @@ h4 {
 .Gold-card-1 {
   width: 100%;
   height: 100%;
-  background-image: url("public/goldbiscuits.jpg");
+  background-image: url("/goldbiscuits.jpg");
   background-size: cover;
   background-position: center;
 }
