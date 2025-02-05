@@ -17,7 +17,7 @@ export default function HomePage() {
       <Services />
       <About />
       <Collection />
-      <GoldRate />
+      {/* <GoldRate /> */}
       <ContactForm />
       <Footer />
       <WhatsappButton />
